@@ -28,6 +28,20 @@ a:hover {
   min-height: 100vh;
 }
 
+.home-columns {
+  display: flex;
+  gap: 40px;
+}
+
+.menu-col {
+  flex-shrink: 0;
+}
+
+.content-col {
+  flex: 1;
+  padding-top: 0.3em;
+}
+
 .home-layout h1 {
   font-size: 2em;
   margin-bottom: 1em;

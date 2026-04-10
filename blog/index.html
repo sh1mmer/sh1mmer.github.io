@@ -2,31 +2,27 @@
 layout: home
 title: Blog - Tom Croucher
 ---
-<div class="section blog-section">
-  <h2>Blog</h2>
-  <div class="blog-content">
-    {% assign posts = paginator.posts | default: site.posts %}
-    {% if posts.size > 0 %}
-    <ul class="post-list">
-      {% for post in posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %d, %Y" }}</span>
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      </li>
-      {% endfor %}
-    </ul>
-    {% if paginator.total_pages > 1 %}
-    <div class="pagination">
-      {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path | relative_url }}">&larr; Newer</a>
-      {% endif %}
-      {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path | relative_url }}">Older &rarr;</a>
-      {% endif %}
-    </div>
-    {% endif %}
-    {% else %}
-    <p>No posts yet. Check back soon!</p>
-    {% endif %}
-  </div>
+<h2>Blog</h2>
+{% assign posts = paginator.posts | default: site.posts %}
+{% if posts.size > 0 %}
+<ul class="post-list">
+  {% for post in posts %}
+  <li>
+    <span class="post-date">{{ post.date | date: "%b %d, %Y" }}</span>
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+  </li>
+  {% endfor %}
+</ul>
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+  {% if paginator.previous_page %}
+  <a href="{{ paginator.previous_page_path | relative_url }}">&larr; Newer</a>
+  {% endif %}
+  {% if paginator.next_page %}
+  <a href="{{ paginator.next_page_path | relative_url }}">Older &rarr;</a>
+  {% endif %}
 </div>
+{% endif %}
+{% else %}
+<p>No posts yet. Check back soon!</p>
+{% endif %}
