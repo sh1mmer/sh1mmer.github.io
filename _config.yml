@@ -1,3 +1,21 @@
-theme: jekyll-theme-minimal
-title: Tom Croucher's Blog
+title: Tom Croucher aka sh1mmer
 description: Programmer Musings
+url: "https://sh1mmer.github.io"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
+
+# Collections
+collections:
+  posts:
+    output: true
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
