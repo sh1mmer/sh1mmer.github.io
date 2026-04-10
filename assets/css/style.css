@@ -8,7 +8,9 @@
 body {
   font-family: Geneva, 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
   color: #fff;
-  background-color: #503a19;
+  background: url('/assets/img/tom1.jpg') bottom left no-repeat #503a19;
+  background-size: cover;
+  background-attachment: fixed;
   min-height: 100vh;
 }
 
