@@ -7,6 +7,12 @@ baseurl: ""
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title/
 
+plugins:
+  - jekyll-paginate
+
+paginate: 10
+paginate_path: "/blog/page:num/"
+
 # Collections
 collections:
   posts:
