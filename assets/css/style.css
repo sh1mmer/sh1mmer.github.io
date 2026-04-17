@@ -158,7 +158,6 @@ div.bg {
 
 .blog-section .blog-content .post-date {
   font-size: 0.8em;
-  opacity: 0.7;
   margin-right: 0.5em;
 }
 
@@ -235,6 +234,12 @@ div.bg {
 }
 
 /* Single post */
+.post-date {
+  font-size: 0.8em;
+  opacity: 0.7;
+  margin-bottom: 2em;
+}
+
 .post-content {
   line-height: 1.7;
 }
