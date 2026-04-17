@@ -46,15 +46,27 @@ a:hover {
 
 .content-col {
   flex: 1;
-  border-left: 1px solid rgba(255,255,255,0.2);
+  border-left: 1px solid rgba(255,255,255,0.1);
   padding-left: 80px;
+}
+
+div.bg {
+  min-height: 100%;
+  min-width: 100%;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1000;
+  background: url('/assets/img/tom1.jpg') bottom left no-repeat #503a19;
 }
 
 @media (max-width: 768px) {
   .content-col {
     border-left: none;
     padding-left: 0;
-    border-top: 1px solid rgba(255,255,255,0.2);
+    border-top: 1px solid rgba(255,255,255,0.1);
     padding-top: 1.5em;
   }
 
@@ -151,18 +163,6 @@ a:hover {
 
 .pagination a {
   margin-right: 1em;
-}
-
-div.bg {
-  min-height: 100%;
-  min-width: 100%;
-  width: 100%;
-  height: auto;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1000;
-  background: url('/assets/img/tom1.jpg') bottom left no-repeat #503a19;
 }
 
 .credit {
