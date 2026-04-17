@@ -73,6 +73,11 @@ div.bg {
   div.bg {
     background-image: url('/assets/img/tom1-mobile.jpg');
   }
+
+  h1.span::before {
+    content: "\A";
+    white-space: pre;
+  }
 }
 
 .home-layout h1 {
