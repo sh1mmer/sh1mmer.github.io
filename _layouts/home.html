@@ -30,7 +30,8 @@ layout: default
       </div>
     </div>
 
-    {% if content != blank %}
+    {% assign trimmed_content = content | strip %}
+    {% if trimmed_content != "" %}
     <div class="content-col">
       {{ content }}
     </div>
